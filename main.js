@@ -1,5 +1,5 @@
 const { randomInt, randomFill } = require('crypto')
-const { Telegraf } = require('./node_modules/telegraph')
+const { Telegraf } = require('./node_modules/telegraph/lib/telegraph')
 const bot = new Telegraf('5024386870:AAG4NE8k5rbQirXJazYXBdIgfXcT2nI0nwI') //сюда помещается токен, который дал botFather
 bot.start((ctx) => ctx.reply('Welcome')) //ответ бота на команду /start
 bot.help((ctx) => ctx.reply('Send me a sticker')) //ответ бота на команду /help
